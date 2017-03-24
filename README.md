@@ -2,7 +2,7 @@
 
 This project includes simulated and 'golden standard' datasets, software and scripts that we used to benchmark  error correction tools
 
-## Title : Comprehensive benchmarking of error correction methods for next generation sequencing via unique molecular identifiers
+### Title : Comprehensive benchmarking of error correction methods for next generation sequencing via unique molecular identifiers
 
 ## Abstract:
 
