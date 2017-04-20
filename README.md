@@ -70,6 +70,12 @@ Table S1. Information about the error correction tools included in the benchmark
 |  Coral | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | Programming language | In the publication compared to |
 
 
+## How to run error correction tools
+
+## Bless
+
+## Fiona
+
 
 
 
