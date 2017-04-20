@@ -32,6 +32,19 @@ Ground true (high-quality variant calls) was downloaded from ftp://ftp-trace.ncb
 
 
 
-## T2/S2 : reads derived from human genomic DNA data
+## Reads derived from human genomic DNA data (T2,S2)
 
-## T3/S3 : reads derived from human genomic DNA data
+We have also used publically available TCR-Seq data with attached 12bp UMIs from 10 chronic HIV patients (SRP045430). 
+
+Data obtaine from : Best, Katharine, et al. "Dynamic perturbations of the T-cell receptor repertoire in chronic HIV infection and following antiretroviral therapy." Frontiers in immunology 6 (2016): 644.
+
+
+## Reads derived from human genomic DNA data (in-house) (T3,S3)
+
+We used the UMI-based high-fidelity sequencing protocol (also known as safe-SeqS) to eliminate errors from the sequencing data. Full description of high-fidelity sequencing protocol is provided in Mangul, Serghei, et al. "Accurate viral population assembly from ultra-deep sequencing data." Bioinformatics 30.12 (2014): i329-i337.
+
+We have used in-house sequencing data derived from 3.4 kb region of Human Immunodeficiency Virus (HIV) spanning the Gag/Pol genes.  The data consist of 107 millions 2x100bp reads with attached 13bp UMIs.  Applying high-fidelity protocol resulted in 3.1 million reads used to evaluate error correction algorithms (Golden Dataset 1: GD1). 
+
+
+
+
