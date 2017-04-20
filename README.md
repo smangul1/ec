@@ -56,7 +56,7 @@ Table S1. Information about the error correction tools included in the benchmark
 
 | Name | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | Programming language | In the publication compared to | Tools webpage | Number of commands to install tool | Software Dependencies | 
 | --- | --- | --- | --- | --- | --- | --- |  --- |  ---| ---|  --- |  ---| ---| 
-| BLESS | Version | k-mer-based  | Types of reads accepted | Organism | Oxford Bioinformatics | 2014 |  Programming language | In the publication compared to | 
+| BLESS | 1.02 | k-mer-based  | fastq | Reference-free | Oxford Bioinformatics | 2014 |  C++ | In the publication compared to | 
 | Fiona | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year |  Programming language | In the publication compared to | 
 | Pollux | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year |  Programming language | In the publication compared to | 
 | BFS | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year |  Programming language | In the publication compared to | 
@@ -66,16 +66,22 @@ Table S1. Information about the error correction tools included in the benchmark
 | Reptile | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year |Programming language | In the publication compared to |
 | Quake | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | Programming language | In the publication compared to |
 | SOAPdenovo Corrector | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | Programming language | In the publication compared to |
-|  ECHO | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | Programming language | In the publication compared to |
+|  ECHO | 1.12 | Underlying algorithm | fastq | Reference-free | Number of genomes supported | Genome Research | 2012 | Python | In the publication compared to |
 |  Coral | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | Programming language | In the publication compared to |
 
 
 ## How to run error correction tools
 
 ## Bless
-
+# To install:
+> make
+> ./bless -read1 <forward fastq> -read2 <reverse fastq> -load prefix -prefix <new prefix> -kmerlength <k-mer length>
 ## Fiona
 
+## ECHO
+#To Install:
+> make 
+> python ErrorCorrection.py -o output/sample_data.fastq sample_data.txt
 
 
 
