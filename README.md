@@ -49,6 +49,5 @@ We have used in-house sequencing data derived from 3.4 kb region of Human Immuno
 ### Information about the error correction tools involved in the survey.
 
 | Name | Version | Underlying algorithm | Types of reads accepted | Organism | Journal | Published year | 
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Bless | st all new or modified files |
+| --- | --- | --- | --- | --- | --- | --- | 
 | Name | Version | Underlying algorithm | Types of reads accepted | Organism | Journal | Published year | 
