@@ -54,7 +54,7 @@ For each of the tools we provide schell script with instlation commands. Instala
 
 Table S1. Information about the error correction tools included in the benchmarking study.
 
-| Name | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | Programming language | In the publication compared to | Tools webpage | Number of commands to install tool | Software Dependencies | 
+| Name | Version | Underlying algorithm | Types of reads accepted (SE or PE) | Organism | Number of genomes supported | Journal | Published year | Programming language | In the publication compared to | Tools webpage | Number of commands to install tool | Software Dependencies | 
 | --- | --- | --- | --- | --- | --- | --- |  --- |  ---| ---|  --- |  ---| ---| 
 | BLESS | 1.02 | k-mer-based  | fastq | Reference-free | Oxford Bioinformatics | 2014 |  C++ | In the publication compared to | 
 | Fiona | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year |  Programming language | In the publication compared to | 
@@ -76,12 +76,19 @@ Table S1. Information about the error correction tools included in the benchmark
 # To install:
 > make
 > ./bless -read1 <forward fastq> -read2 <reverse fastq> -load prefix -prefix <new prefix> -kmerlength <k-mer length>
+
+# To run:
+????
+
 ## Fiona
 
 ## ECHO
 #To Install:
 > make 
 > python ErrorCorrection.py -o output/sample_data.fastq sample_data.txt
+
+# to run
+
 
 
 
