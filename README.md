@@ -51,4 +51,4 @@ We have used in-house sequencing data derived from 3.4 kb region of Human Immuno
 | Name | Version | Underlying algorithm | Types of reads accepted | Organism | Journal | Published year | 
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Bless | st all new or modified files |
-| git diff | Show file differences that haven't been staged |
+| Name | Version | Underlying algorithm | Types of reads accepted | Organism | Journal | Published year | 
