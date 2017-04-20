@@ -47,4 +47,7 @@ We have used in-house sequencing data derived from 3.4 kb region of Human Immuno
 
 
 
-
+| Command | Description |
+| --- | --- |
+| git status | List all new or modified files |
+| git diff | Show file differences that haven't been staged |
