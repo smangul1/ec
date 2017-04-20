@@ -46,8 +46,10 @@ We used the UMI-based high-fidelity sequencing protocol (also known as safe-SeqS
 We have used in-house sequencing data derived from 3.4 kb region of Human Immunodeficiency Virus (HIV) spanning the Gag/Pol genes.  The data consist of 107 millions 2x100bp reads with attached 13bp UMIs.  Applying high-fidelity protocol resulted in 3.1 million reads used to evaluate error correction algorithms (Golden Dataset 1: GD1). 
 
 
-### Information about the error correction tools involved in the survey.
+### Information about the error correction tools included in the benchmarking survey.
 
-| Name | Version | Underlying algorithm | Types of reads accepted | Organism | Journal | Published year | 
-| --- | --- | --- | --- | --- | --- | --- | 
-| Name | Version | Underlying algorithm | Types of reads accepted | Organism | Journal | Published year | 
+| Name | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | 
+| --- | --- | --- | --- | --- | --- | --- |  --- |  
+| BLESS | Version | k-mer-based  | Types of reads accepted | Organism | Oxford Bioinformatics | 2014 | 
+| Fiona | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | 
+
