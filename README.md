@@ -48,16 +48,21 @@ We have used in-house sequencing data derived from 3.4 kb region of Human Immuno
 
 ### Information about the error correction tools included in the benchmarking survey.
 
-| Name | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | 
-| --- | --- | --- | --- | --- | --- | --- |  --- |  
-| BLESS | Version | k-mer-based  | Types of reads accepted | Organism | Oxford Bioinformatics | 2014 | 
-| Fiona | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | 
-| Pollux | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | 
-| BFS | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | 
-| Lighter | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | 
-| Musket | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | 
-| Racer | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | 
-| Reptile | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year |
+| Name | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | Programming language | In the publication compared to | 
+| --- | --- | --- | --- | --- | --- | --- |  --- |  ---| ---| 
+| BLESS | Version | k-mer-based  | Types of reads accepted | Organism | Oxford Bioinformatics | 2014 |  Programming language | In the publication compared to | 
+| Fiona | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year |  Programming language | In the publication compared to | 
+| Pollux | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year |  Programming language | In the publication compared to | 
+| BFS | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year |  Programming language | In the publication compared to | 
+| Lighter | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | Programming language | In the publication compared to |
+| Musket | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | Programming language | In the publication compared to |
+| Racer | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | Programming language | In the publication compared to |
+| Reptile | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year |Programming language | In the publication compared to |
+| Quake | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | Programming language | In the publication compared to |
+| SOAPdenovo Corrector | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | Programming language | In the publication compared to |
+|  ECHO | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | Programming language | In the publication compared to |
+|  Coral | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | Programming language | In the publication compared to |
+
 
 
 
