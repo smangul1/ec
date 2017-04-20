@@ -52,4 +52,15 @@ We have used in-house sequencing data derived from 3.4 kb region of Human Immuno
 | --- | --- | --- | --- | --- | --- | --- |  --- |  
 | BLESS | Version | k-mer-based  | Types of reads accepted | Organism | Oxford Bioinformatics | 2014 | 
 | Fiona | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | 
+| Pollux | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | 
+| BFS | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | 
+| Lighter | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | 
+| Musket | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | 
+| Racer | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | 
+| Reptile | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year |
+
+
+
+
+
 
