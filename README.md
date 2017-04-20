@@ -48,8 +48,9 @@ We have used in-house sequencing data derived from 3.4 kb region of Human Immuno
 
 ### Information about the error correction tools included in the benchmarking survey.
 
-| Name | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | Programming language | In the publication compared to | 
-| --- | --- | --- | --- | --- | --- | --- |  --- |  ---| ---| 
+| Name | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | Programming language | In the publication compared to | Tools webpage | Number of commands to install tool | Software Dependencies | 
+
+| --- | --- | --- | --- | --- | --- | --- |  --- |  ---| ---|  --- |  ---| ---| 
 | BLESS | Version | k-mer-based  | Types of reads accepted | Organism | Oxford Bioinformatics | 2014 |  Programming language | In the publication compared to | 
 | Fiona | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year |  Programming language | In the publication compared to | 
 | Pollux | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year |  Programming language | In the publication compared to | 
