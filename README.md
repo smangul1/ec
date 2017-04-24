@@ -60,11 +60,11 @@ Table S1. Information about the error correction tools included in the benchmark
 | Fiona | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year |  Programming language | In the publication compared to | 
 | Pollux | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year |  Programming language | In the publication compared to | 
 | BFS | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year |  Programming language | In the publication compared to | 
-| Lighter | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | Programming language | In the publication compared to |
-| Musket | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | Programming language | In the publication compared to |
+| Lighter | 1.1.1 | k-mer-based | fastq,fasta | Organism | Number of genomes supported | _Genome Biology_ | 2014 | C++ | In the publication compared to | https://github.com/mourisl/Lighter | 
+| Musket | 1.1 | k-mer-based | fastq, fasta | Organism | Number of genomes supported | _Oxford Bioinformatics_ |  2012 | C++ | In the publication compared to | http://musket.sourceforge.net/homepage.htm |
 | Racer | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | Programming language | In the publication compared to |
 | Reptile | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year |Programming language | In the publication compared to |
-| Quake | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | Programming language | In the publication compared to |
+| Quake | 0.3 | k-mer-based | Types of reads accepted | Organism | Number of genomes supported | _Genome Biology_ | 2010 | C++, R | In the publication compared to | http://www.cbcb.umd.edu/software/quake |
 | SOAPdenovo Corrector | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | Programming language | In the publication compared to |
 |  ECHO | 1.12 | Underlying algorithm | fastq | Reference-free | Number of genomes supported | Genome Research | 2012 | Python | In the publication compared to |
 |  Coral | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | Programming language | In the publication compared to |
@@ -90,7 +90,29 @@ Table S1. Information about the error correction tools included in the benchmark
 # to run
 
 
+## Lighter
+### To install:
+```make```
+### To run:
+```./lighter -r <fastq file> -K <k-mer length> <genome size>```
 
 
+## Musket
+### To install:
+```make```
+### To run:
+```./musket -k <k-mer length> <estimated total number of k-mers for this k-mer size> -o <output file name> <fastq file>```
 
-
+## Quake
+### To install:
+```
+# Edit the Makefile to include the location of where the boost library is installed
+sed -i "s#-I/opt/local/var/macports/software/boost/1.46.1_0/opt/local/include#-I/usr/include/boost#" Quake/src/Makefile
+make
+```
+### To run:
+```
+cat <fastq file> | Quake/bin/count-kmers -k <kmer-length> > counts.txt
+Quake/bin/cov_model --int counts.txt
+Quake/bin/correct -r <fastq file> -k <k-mer length> -m counts.txt -a cutoff.txt
+```
