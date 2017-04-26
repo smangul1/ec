@@ -55,7 +55,7 @@ For each of the tools we provide schell script with instlation commands. Instala
 Table S1. Information about the error correction tools included in the benchmarking study.
 
 | Name | Version | Underlying algorithm | Default k-mer size | Types of reads accepted (SE or PE) | Organism | Number of genomes supported | Journal | Published year | Programming language | In the publication compared to | Tools webpage | Number of commands to install tool | Software Dependencies |  
-| --- | --- | --- | --- | --- | --- | --- |  --- |  ---| ---|  --- |  ---| ---| 
+| --- | --- | --- | --- | --- | --- | --- |  --- |  ---| ---|  --- |  ---| ---| --|
 | BLESS | 1.02 | k-mer-based  | | Default k-mer size | fastq | Reference-free | Oxford Bioinformatics | 2014 |  C++ | In the publication compared to | 
 | Fiona | 0.2.8 | partial suffix array | SE  |  human, drosophila, bacteria | Number of genomes supported | Bioinformatics | 2014 |  C++ | Allpaths-LG,Coral,H-Shrec,ECHO,HiTEC,Quake  | https://github.com/seqan/seqan/tree/master/apps/fiona | Number of commands to install tool | Software Dependencies | 
 | Pollux | 1.0.2 | k-mer-based | SE, PE | human, bacteria | Number of genomes supported | BMC Bioinformatics | 2015 |  C | Quake, SGA, BLESS, Musket, RACER | https://github.com/emarinier/pollux | Number of commands to install tool | Software Dependencies |  
