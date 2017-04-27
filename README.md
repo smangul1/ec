@@ -62,8 +62,8 @@ Table S1. Information about the error correction tools included in the benchmark
 | BFS | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year |  Programming language | In the publication compared to | 
 | Lighter | 1.1.1 | k-mer-based | fastq,fasta | Organism | Number of genomes supported | _Genome Biology_ | 2014 | C++ | In the publication compared to | https://github.com/mourisl/Lighter | 
 | Musket | 1.1 | k-mer-based | fastq, fasta | Organism | Number of genomes supported | _Oxford Bioinformatics_ |  2012 | C++ | In the publication compared to | http://musket.sourceforge.net/homepage.htm |
-| Racer | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | Programming language | In the publication compared to |
-| Reptile | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year |Programming language | In the publication compared to |
+| Racer | 1.0.1 | k-mer-based | fastq, fasta | - | - | _Bioinformatics_ | 2013 | C++ | Coral, HITEC, Quake, Reptile, SHREC |
+| Reptile | 1.1 | k-mer-based | fastq | - | - | _Bioinformatics_ | 2010 | C++ | SHREC |
 | Quake | 0.3 | k-mer-based | Types of reads accepted | Organism | Number of genomes supported | _Genome Biology_ | 2010 | C++, R | In the publication compared to | http://www.cbcb.umd.edu/software/quake |
 | SOAPdenovo Corrector | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | Programming language | In the publication compared to |
 |  ECHO | 1.12 | Underlying algorithm | fastq | Reference-free | Number of genomes supported | Genome Research | 2012 | Python | In the publication compared to |
