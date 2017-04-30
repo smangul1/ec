@@ -163,3 +163,20 @@ Quake/bin/correct -r <fastq file> -k <k-mer length> -m counts.txt -a cutoff.txt
 ### T3
 
 Before error correction I deleted barcode part from each original read (13 bp in the beginning of the read ). The length became 87bp.
+
+
+# Virus-specific tools
+
+We run 2 virus-specific tools able to correct errors in the reads generated from viral population and reconstruct local haplotypes
+
+We run KEC and Shorah
+
+## KEC
+As input I mixed forward and reverse reads together. KEC can not work with paired end reads. 
+KEC changed original reads names and collapsed some reads. 
+
+## Shorah
+Shohar is alligment based tool. We maped the read sonto the viral reference genome prior to running tool
+
+
+
