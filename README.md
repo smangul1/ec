@@ -56,9 +56,9 @@ Table S1. Information about the error correction tools included in the benchmark
 
 | Name | Version | Underlying algorithm | Types of reads accepted (single-end(SE) or pairen-end(PE)) | Organism | Journal | Published year | Programming language | In the publication compared to | Tools webpage | Software Dependencies |  Default k-mer size |  
 | --- | --- | --- | --- | --- | --- | --- |  --- |  ---| ---|  --- |  ---|
-| BLESS | 1.02 | k-mer-based | fastq | Reference-free | Oxford Bioinformatics | 2014 | C++ | In the publication compared to | 
-| Fiona | 0.2.8 | partial suffix array | SE  |  human, drosophila, bacteria | Number of genomes supported | Bioinformatics | 2014 | C++ | Allpaths-LG,Coral,H-Shrec,ECHO,HiTEC,Quake  | https://github.com/seqan/seqan/tree/master/apps/fiona | Number of commands to install tool | Software Dependencies | -- |
-| Pollux | 1.0.2 | k-mer-based | SE, PE | human, bacteria | Number of genomes supported | BMC Bioinformatics | 2015 | C | Quake, SGA, BLESS, Musket, RACER | https://github.com/emarinier/pollux | Number of commands to install tool | Software Dependencies |  
+| BLESS | 1.02 | k-mer-based | SE and PE? | Human? | Oxford Bioinformatics | 2014 | C++ | In the publication compared to? | Default k-mer size |  
+| Fiona | 0.2.8 | partial suffix array | SE  |  human, drosophila, bacteria | Bioinformatics | 2014 | C++ | Allpaths-LG,Coral,H-Shrec,ECHO,HiTEC,Quake  | https://github.com/seqan/seqan/tree/master/apps/fiona  | Software Dependencies | -- |
+| Pollux | 1.0.2 | k-mer-based | SE, PE | human, bacteria | BMC Bioinformatics | 2015 | C | Quake, SGA, BLESS, Musket, RACER | https://github.com/emarinier/pollux | Software Dependencies |  
 | BFC | 1.0 | k-mer based | SE, PE (interleaved) | Reference-free | Any | _Bioinformatics_ | 2015 | C | BLESS-v0p23 (Heo etal., 2014), Bloocoo-1.0.4 (Drezen etal., 2014), fermi2-r175 (Li, 2012), Lighter-20150123 (Song etal., 2014), Musket-1.1 (Liu etal., 2013) and SGA-0.9.13 (Simpson and Durbin, 2012) | https://github.com/lh3/bfc | - | None | Depends on input genome size | 
 | Lighter | 1.1.1 | k-mer-based | fastq,fasta | Organism | Number of genomes supported | _Genome Biology_ | 2014 | C++ | In the publication compared to | https://github.com/mourisl/Lighter | 
 | Musket | 1.1 | k-mer-based | fastq, fasta | Organism | Number of genomes supported | _Oxford Bioinformatics_ |  2012 | C++ | In the publication compared to | http://musket.sourceforge.net/homepage.htm |
@@ -74,9 +74,9 @@ Table S1. Information about the error correction tools included in the benchmark
 # How to run error correction tools
 
 ## Bless
-### To install:
+#### To install:
 ```make```
-### To run:
+#### To run:
 ```./bless -read1 <forward fastq> -read2 <reverse fastq> -load prefix -prefix <new prefix> -kmerlength <k-mer length>```
 
 
