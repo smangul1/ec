@@ -158,3 +158,8 @@ Quake/bin/correct -r <fastq file> -k <k-mer length> -m counts.txt -a cutoff.txt
 ```./coral [-f, -fq or -fs for input file format] <input file> -o <output file>```
 
 
+# Preparing golden true datasets
+
+### T3
+
+Before error correction I deleted barcode part from each original read (13 bp in the beginning of the read ). The length became 87bp.
