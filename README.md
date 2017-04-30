@@ -54,7 +54,7 @@ For each of the tools we provide schell script with instlation commands. Instala
 
 Table S1. Information about the error correction tools included in the benchmarking study.
 
-| Name | Version | Underlying algorithm | Types of reads accepted (single-end(SE) or pairen-end(PE)) | Organism | Number of genomes supported | Journal | Published year | Programming language | In the publication compared to | Tools webpage | Software Dependencies |  Default k-mer size | 
+| Name | Version | Underlying algorithm | Types of reads accepted (single-end(SE) or pairen-end(PE)) | Organism | Number of genomes supported | Journal | Published year | Programming language | In the publication compared to | Tools webpage | Software Dependencies |  Default k-mer size |  
 | --- | --- | --- | --- | --- | --- | --- |  --- |  ---| ---|  --- |  ---| --- |
 | BLESS | 1.02 | k-mer-based | fastq | Reference-free | Oxford Bioinformatics | 2014 | C++ | In the publication compared to | 
 | Fiona | 0.2.8 | partial suffix array | SE  |  human, drosophila, bacteria | Number of genomes supported | Bioinformatics | 2014 | C++ | Allpaths-LG,Coral,H-Shrec,ECHO,HiTEC,Quake  | https://github.com/seqan/seqan/tree/master/apps/fiona | Number of commands to install tool | Software Dependencies | -- |
