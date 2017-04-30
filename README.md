@@ -54,40 +54,46 @@ For each of the tools we provide schell script with instlation commands. Instala
 
 Table S1. Information about the error correction tools included in the benchmarking study.
 
-| Name | Version | Underlying algorithm  Types of reads accepted (SE or PE) | Organism | Number of genomes supported | Journal | Published year | Programming language | In the publication compared to | Tools webpage | Number of commands to install tool | Software Dependencies |  Default k-mer size |
-| --- | --- | --- | --- | --- | --- | --- |  --- |  ---| ---|  --- |  ---| ---|
-| BLESS | 1.02 | k-mer-based  | fastq | Reference-free | Oxford Bioinformatics | 2014 |  C++ | In the publication compared to | 
-| Fiona | 0.2.8 | partial suffix array | SE  |  human, drosophila, bacteria | Number of genomes supported | Bioinformatics | 2014 |  C++ | Allpaths-LG,Coral,H-Shrec,ECHO,HiTEC,Quake  | https://github.com/seqan/seqan/tree/master/apps/fiona | Number of commands to install tool | Software Dependencies | 
-| Pollux | 1.0.2 | k-mer-based | SE, PE | human, bacteria | Number of genomes supported | BMC Bioinformatics | 2015 |  C | Quake, SGA, BLESS, Musket, RACER | https://github.com/emarinier/pollux | Number of commands to install tool | Software Dependencies |  
-| BFS | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year |  Programming language | In the publication compared to | 
+| Name | Version | Underlying algorithm | Types of reads accepted (SE or PE) | Organism | Number of genomes supported | Journal | Published year | Programming language | In the publication compared to | Tools webpage | Number of commands to install tool | Software Dependencies |  Default k-mer size |
+| --- | --- | --- | --- | --- | --- | --- |  --- |  ---| ---|  --- |  ---| --- |-- |
+| BLESS | 1.02 | k-mer-based | fastq | Reference-free | Oxford Bioinformatics | 2014 | C++ | In the publication compared to | 
+| Fiona | 0.2.8 | partial suffix array | SE  |  human, drosophila, bacteria | Number of genomes supported | Bioinformatics | 2014 | C++ | Allpaths-LG,Coral,H-Shrec,ECHO,HiTEC,Quake  | https://github.com/seqan/seqan/tree/master/apps/fiona | Number of commands to install tool | Software Dependencies | -- |
+| Pollux | 1.0.2 | k-mer-based | SE, PE | human, bacteria | Number of genomes supported | BMC Bioinformatics | 2015 | C | Quake, SGA, BLESS, Musket, RACER | https://github.com/emarinier/pollux | Number of commands to install tool | Software Dependencies |  
+| BFC | 1.0 | k-mer based | SE, PE (interleaved) | Reference-free | Any | _Bioinformatics_ | 2015 | C | BLESS-v0p23 (Heo etal., 2014), Bloocoo-1.0.4 (Drezen etal., 2014), fermi2-r175 (Li, 2012), Lighter-20150123 (Song etal., 2014), Musket-1.1 (Liu etal., 2013) and SGA-0.9.13 (Simpson and Durbin, 2012) | https://github.com/lh3/bfc | - | None | Depends on input genome size | 
 | Lighter | 1.1.1 | k-mer-based | fastq,fasta | Organism | Number of genomes supported | _Genome Biology_ | 2014 | C++ | In the publication compared to | https://github.com/mourisl/Lighter | 
 | Musket | 1.1 | k-mer-based | fastq, fasta | Organism | Number of genomes supported | _Oxford Bioinformatics_ |  2012 | C++ | In the publication compared to | http://musket.sourceforge.net/homepage.htm |
 | Racer | 1.0.1 | k-mer-based | fastq, fasta | - | - | _Bioinformatics_ | 2013 | C++ | Coral, HITEC, Quake, Reptile, SHREC |
 | Reptile | 1.1 | k-mer-based | fastq | - | - | _Bioinformatics_ | 2010 | C++ | SHREC |
 | Quake | 0.3 | k-mer-based | Types of reads accepted | Organism | Number of genomes supported | _Genome Biology_ | 2010 | C++, R | In the publication compared to | http://www.cbcb.umd.edu/software/quake |
-| SOAPdenovo Corrector | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | Programming language | In the publication compared to |
-|  ECHO | 1.12 | Underlying algorithm | fastq | Reference-free | Number of genomes supported | Genome Research | 2012 | Python | In the publication compared to |
-|  Coral | Version | Underlying algorithm | Types of reads accepted | Organism | Number of genomes supported | Journal | Published year | Programming language | In the publication compared to |
+| SOAPdenovo2 Corrector | 2.03 | k-mer based | SE, PE | Reference-free | Number of genomes supported | _GigaScience_ | 2012 | C++ | SOAPdevnovo1, ALLPATHS-LG | http://soap.genomics.org.cn/about.html | 
+| ECHO | 1.12 | Underlying algorithm | fastq | Reference-free | Number of genomes supported | Genome Research | 2012 | Python | In the publication compared to |
+| Coral | 1.4.1 | Multiple alignments | SE, PE (interleaved) | Reference-free | Number of genomes supported | _Bioinformatics_ | 2011 | C | Shrec, Quake, Reptile | https://www.cs.helsinki.fi/u/lmsalmel/coral/ |
 
 
-## How to run error correction tools
+
+# How to run error correction tools
 
 ## Bless
-# To install:
-> make
-> ./bless -read1 <forward fastq> -read2 <reverse fastq> -load prefix -prefix <new prefix> -kmerlength <k-mer length>
+### To install:
+```make```
+### To run:
+```./bless -read1 <forward fastq> -read2 <reverse fastq> -load prefix -prefix <new prefix> -kmerlength <k-mer length>```
 
-# To run:
-????
 
 ## Fiona
 
 ## ECHO
-#To Install:
-> make 
-> python ErrorCorrection.py -o output/sample_data.fastq sample_data.txt
+### To install:
+```make```
+### To run:
+```python ErrorCorrection.py -o output/sample_data.fastq sample_data.txt```
 
-# to run
+
+## BFC
+### To install:
+```make```
+### To run:
+```./bfc -s <approximate genome size> -k <k-mer length> <fastq file> > <output file>```
 
 
 ## Lighter
@@ -116,3 +122,39 @@ cat <fastq file> | Quake/bin/count-kmers -k <kmer-length> > counts.txt
 Quake/bin/cov_model --int counts.txt
 Quake/bin/correct -r <fastq file> -k <k-mer length> -m counts.txt -a cutoff.txt
 ```
+
+## Quake
+### To install:
+```
+# Edit the Makefile to include the location of where the boost library is installed
+sed -i "s#-I/opt/local/var/macports/software/boost/1.46.1_0/opt/local/include#-I/usr/include/boost#" Quake/src/Makefile
+make
+```
+### To run:
+```
+cat <fastq file> | Quake/bin/count-kmers -k <kmer-length> > counts.txt
+Quake/bin/cov_model --int counts.txt
+Quake/bin/correct -r <fastq file> -k <k-mer length> -m counts.txt -a cutoff.txt
+```
+
+## SOAPdenovo Corrector
+### To install:
+```make```
+### To run:
+```
+# If k-mer size <= 17:
+./KmerFreq_AR -k <k-mer length> -p <output prefix> <list of read files>
+./Corrector_AR -k <k-mer length> <prefix.freq.cz> <prefix.freq.cz.len> <list of read files>
+
+# If k-mer size > 17:
+./KmerFreq_HA -k <k-mer length> -p <output prefix> -L <maximum read length> -l <list of read files>
+./Corrector_HA -k <k-mer length> <prefix.freq.cz> <list of read files>
+```
+
+## Coral
+### To install:
+```make```
+### To run:
+```./coral [-f, -fq or -fs for input file format] <input file> -o <output file>```
+
+
