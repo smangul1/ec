@@ -194,5 +194,8 @@ Error correction tools require k-mer size as a parameter. We use the following f
 ###T1 and S1
 
 ### S2
+k=18
+log4(405*1000)X2=18
 
 ### T3
+k=15
