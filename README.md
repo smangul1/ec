@@ -187,3 +187,12 @@ Shohar is alligment based tool. We maped the read sonto the viral reference geno
 
 
 
+# kmer size selection
+
+Error correction tools require k-mer size as a parameter. We use the following formula to caclulate the k-mer size using the length of the genome : l= log4 200*G, where G is the genome size 
+
+###T1 and S1
+
+### S2
+
+### T3
