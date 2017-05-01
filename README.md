@@ -66,15 +66,15 @@ Table S1. Information about the error correction tools included in the benchmark
 | BLESS | 1.02 | k-mer-based | SE and PE? | Human? | Oxford Bioinformatics | 2014 | C++ | In the publication compared to? | Default k-mer size |  
 | Fiona | 0.2.8 | partial suffix array | SE  |  human, drosophila, bacteria | Bioinformatics | 2014 | C++ | Allpaths-LG,Coral,H-Shrec,ECHO,HiTEC,Quake  | https://github.com/seqan/seqan/tree/master/apps/fiona  | Software Dependencies | -- |
 | Pollux | 1.0.2 | k-mer-based | SE, PE | human, bacteria | BMC Bioinformatics | 2015 | C | Quake, SGA, BLESS, Musket, RACER | https://github.com/emarinier/pollux | Software Dependencies |  
-| BFC | 1.0 | k-mer based | SE, PE (interleaved) | Reference-free | Any | _Bioinformatics_ | 2015 | C | BLESS-v0p23 (Heo etal., 2014), Bloocoo-1.0.4 (Drezen etal., 2014), fermi2-r175 (Li, 2012), Lighter-20150123 (Song etal., 2014), Musket-1.1 (Liu etal., 2013) and SGA-0.9.13 (Simpson and Durbin, 2012) | https://github.com/lh3/bfc | - | None | Depends on input genome size | 
-| Lighter | 1.1.1 | k-mer-based | fastq,fasta | Organism | Number of genomes supported | _Genome Biology_ | 2014 | C++ | In the publication compared to | https://github.com/mourisl/Lighter | 
-| Musket | 1.1 | k-mer-based | fastq, fasta | Organism | Number of genomes supported | _Oxford Bioinformatics_ |  2012 | C++ | In the publication compared to | http://musket.sourceforge.net/homepage.htm |
-| Racer | 1.0.1 | k-mer-based | fastq, fasta | - | - | _Bioinformatics_ | 2013 | C++ | Coral, HITEC, Quake, Reptile, SHREC |
-| Reptile | 1.1 | k-mer-based | fastq | - | - | _Bioinformatics_ | 2010 | C++ | SHREC |
-| Quake | 0.3 | k-mer-based | Types of reads accepted | Organism | Number of genomes supported | _Genome Biology_ | 2010 | C++, R | In the publication compared to | http://www.cbcb.umd.edu/software/quake |
-| SOAPdenovo2 Corrector | 2.03 | k-mer based | SE, PE | Reference-free | Number of genomes supported | _GigaScience_ | 2012 | C++ | SOAPdevnovo1, ALLPATHS-LG | http://soap.genomics.org.cn/about.html | 
-| ECHO | 1.12 | Underlying algorithm | fastq | Reference-free | Number of genomes supported | Genome Research | 2012 | Python | In the publication compared to |
-| Coral | 1.4.1 | Multiple alignments | SE, PE (interleaved) | Reference-free | Number of genomes supported | _Bioinformatics_ | 2011 | C | Shrec, Quake, Reptile | https://www.cs.helsinki.fi/u/lmsalmel/coral/ |
+| BFC | 1.0 | k-mer based | SE, PE (interleaved) | Reference-free | _Bioinformatics_ | 2015 | C | BLESS-v0p23 (Heo etal., 2014), Bloocoo-1.0.4 (Drezen etal., 2014), fermi2-r175 (Li, 2012), Lighter-20150123 (Song etal., 2014), Musket-1.1 (Liu etal., 2013) and SGA-0.9.13 (Simpson and Durbin, 2012) | https://github.com/lh3/bfc | - | None | Depends on input genome size | 
+| Lighter | 1.1.1 | k-mer-based | fastq,fasta | Organism | _Genome Biology_ | 2014 | C++ | In the publication compared to | https://github.com/mourisl/Lighter | 
+| Musket | 1.1 | k-mer-based | fastq, fasta | Organism | _Oxford Bioinformatics_ |  2012 | C++ | In the publication compared to | http://musket.sourceforge.net/homepage.htm |
+| Racer | 1.0.1 | k-mer-based | fastq, fasta | - | _Bioinformatics_ | 2013 | C++ | Coral, HITEC, Quake, Reptile, SHREC |
+| Reptile | 1.1 | k-mer-based | fastq | - | _Bioinformatics_ | 2010 | C++ | SHREC |
+| Quake | 0.3 | k-mer-based | Types of reads accepted | Organism | _Genome Biology_ | 2010 | C++, R | In the publication compared to | http://www.cbcb.umd.edu/software/quake |
+| SOAPdenovo2 Corrector | 2.03 | k-mer based | SE, PE | Reference-free | _GigaScience_ | 2012 | C++ | SOAPdevnovo1, ALLPATHS-LG | http://soap.genomics.org.cn/about.html | 
+| ECHO | 1.12 | Underlying algorithm | fastq | Reference-free | Genome Research | 2012 | Python | In the publication compared to |
+| Coral | 1.4.1 | Multiple alignments | SE, PE (interleaved) | Reference-free | _Bioinformatics_ | 2011 | C | Shrec, Quake, Reptile | https://www.cs.helsinki.fi/u/lmsalmel/coral/ |
 
 
 
