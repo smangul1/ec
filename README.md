@@ -30,6 +30,13 @@ These data and other data sets for NA12878 are available at the Genome in a Bott
 We downloaded raw paired-end reads from http://www.ebi.ac.uk/ena/data/view/PRJNA162355. 
 Ground true (high-quality variant calls) was downloaded from ftp://ftp-trace.ncbi.nlm.nih.gov/giab/ftp/release/NA12878_HG001/NISTv3.3.2/GRCh38/
 
+## T1a
+
+We use combination of real data and the clonality model to generate cancer data. We have use a normal WGS sample and split the reads into 2 population. For example 90%/10%, 95%/5%
+In each of the population we introduce in-silico variants by using https://github.com/adamewing/bamsurgeon with -s option preventing the conflict with the real variants from the data. 
+
+The variants for each of the populations were randomly generated at 1SNP per 1000 bases. We do this 5 times. 
+
 
 
 ## Reads derived from human genomic DNA data (T2,S2)
