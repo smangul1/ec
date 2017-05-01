@@ -199,3 +199,7 @@ log4(405*1000)X2=18
 
 ### T3
 k=15
+
+ Since we have relatively long read lengths of 88bp
+and relatively high average read coverage levels of up to 100x, we chose a larger
+k-mer size of 15. 
