@@ -127,7 +127,7 @@ Table S1. Information about the error correction tools included in the benchmark
 ```make```
 
 ### To run:
-Use run_racer.sh (update the RACER_DIR and DATA_DIR variables appropriately).
+Use run_racer.sh (update the RACER_DIR, DATA_DIR, and GENOME_SIZE variables appropriately).
 
 ## Reptile
 ### To install:
@@ -200,13 +200,18 @@ Error correction tools require k-mer size as a parameter. We use the following f
 
 ### T1 and S1
 k=19
+genome size=3 000 000 000
+
+# T2 
 
 ### S2
 k=18
+genome size=405000
 log4(405*1000)X2=18
 
 ### T3
 k=15
+genome size=3400
 
  Since we have relatively long read lengths of 88bp
 and relatively high average read coverage levels of up to 100x, we chose a larger
