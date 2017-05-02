@@ -5,7 +5,7 @@
 
 RACER_DIR="$HOME/project/tools/racer_program"
 DATA_DIR="/u/home/n/ngcrawfo/project-zarlab/igor/imrep_revision/data/simulation/IGH/"
-GENOME_SIZE=`405000`
+GENOME_SIZE="405000"
 
 mkdir data racer_output
 find $DATA_DIR -maxdepth 1 | grep fastq | xargs cp -t data
