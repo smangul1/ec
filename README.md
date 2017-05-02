@@ -75,8 +75,8 @@ Table S1. Information about the error correction tools included in the benchmark
 | BFC | 1.0 | k-mer based | SE, PE (interleaved) | Reference-free | _Bioinformatics_ | 2015 | C | BLESS-v0p23 (Heo etal., 2014), Bloocoo-1.0.4 (Drezen etal., 2014), fermi2-r175 (Li, 2012), Lighter-20150123 (Song etal., 2014), Musket-1.1 (Liu etal., 2013) and SGA-0.9.13 (Simpson and Durbin, 2012) | https://github.com/lh3/bfc | - | None | Depends on input genome size | 
 | Lighter | 1.1.1 | k-mer-based | fastq,fasta | Organism | _Genome Biology_ | 2014 | C++ | Quake v0.3, Musket v1.1, Bless v0p17, Soapec v2.0.1 | https://github.com/mourisl/Lighter | - | 15k |
 | Musket | 1.1 | k-mer-based | fastq, fasta | Organism | _Oxford Bioinformatics_ |  2012 | C++ | HiTEC, SGA, SHREC, Coral, Quake, Reptile, DecGPU | http://musket.sourceforge.net/homepage.htm | - | 28k |
-| Racer | 1.0.1 | k-mer-based | fastq, fasta | Organism | _Bioinformatics_ | 2013 | C++ | Coral, HITEC, Quake, Reptile, SHREC | - | OpenMP | - | 
-| Reptile | 1.1 | k-mer-based | fastq | Organism | _Bioinformatics_ | 2010 | C++ | SHREC | - | - | - |
+| Racer | 1.0.1 | k-mer-based | fastq, fasta | Organism | _Bioinformatics_ | 2013 | C++ | Coral, HITEC, Quake, Reptile, SHREC | http://www.csd.uwo.ca/~ilie/RACER/ | OpenMP | - | 
+| Reptile | 1.1 | k-mer-based | fastq | Organism | _Bioinformatics_ | 2010 | C++ | SHREC | http://aluru-sun.ece.iastate.edu/doku.php?id=reptile | Perl | 24 |
 | Quake | 0.3 | k-mer-based | fastq | Organism | _Genome Biology_ | 2010 | C++, R | SOAPdenovo | http://www.cbcb.umd.edu/software/quake | - | - |
 | SOAPdenovo2 Corrector | 2.03 | k-mer based | SE, PE | Reference-free | _GigaScience_ | 2012 | C/C++ | SOAPdevnovo1, ALLPATHS-LG | http://soap.genomics.org.cn/about.html | GCC 4.4.5 or later | - |
 | ECHO | 1.12 | Underlying algorithm | fastq | Reference-free | Genome Research | 2012 | Python | SA, SHREC | - |
@@ -122,19 +122,20 @@ Table S1. Information about the error correction tools included in the benchmark
 ### To run:
 ```./musket -k <k-mer length> <estimated total number of k-mers for this k-mer size> -o <output file name> <fastq file>```
 
-## Quake
+## RACER
 ### To install:
-```
-# Edit the Makefile to include the location of where the boost library is installed
-sed -i "s#-I/opt/local/var/macports/software/boost/1.46.1_0/opt/local/include#-I/usr/include/boost#" Quake/src/Makefile
-make
-```
+```make```
+
 ### To run:
-```
-cat <fastq file> | Quake/bin/count-kmers -k <kmer-length> > counts.txt
-Quake/bin/cov_model --int counts.txt
-Quake/bin/correct -r <fastq file> -k <k-mer length> -m counts.txt -a cutoff.txt
-```
+Use run_racer.sh (update the RACER_DIR and DATA_DIR variables appropriately).
+
+## Reptile
+### To install:
+```make```
+in src, utils/reptile_merger, and utils/seq-analy.
+
+### To run:
+Use run_reptile.sh (update the REPTILE_DIR and DATA_DIR variables appropriately).
 
 ## Quake
 ### To install:
