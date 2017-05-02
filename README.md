@@ -63,17 +63,17 @@ Table S1. Information about the error correction tools included in the benchmark
 
 | Name | Version | Underlying algorithm | Types of reads accepted (single-end(SE) or pairen-end(PE)) | Organism | Journal | Published year | Programming language | In the publication compared to | Tools webpage | Software Dependencies |  Default k-mer size |  
 | --- | --- | --- | --- | --- | --- | --- |  --- |  ---| ---|  --- |  ---|
-| BLESS | 1.02 | k-mer-based | SE and PE? | Human? | Oxford Bioinformatics | 2014 | C++ | In the publication compared to? | - |  MPICH 3.1.3, OpenMPI 1.8.4| Default k-mer size
+| BLESS | 1.02 | k-mer-based | SE and PE? | Human? | Oxford Bioinformatics | 2014 | C++ | In the publication compared to? | https://sourceforge.net/p/bless-ec/wiki/Home/ |  MPICH 3.1.3, OpenMPI 1.8.4, Boost library, google spareshash, klib, KMC, murmurhash3, zlib, pigz| Default k-mer size
 | Fiona | 0.2.8 | partial suffix array | SE  |  human, drosophila, bacteria | Bioinformatics | 2014 | C++ | Allpaths-LG,Coral,H-Shrec,ECHO,HiTEC,Quake  | https://github.com/seqan/seqan/tree/master/apps/fiona  | Software Dependencies | -- |
-| Pollux | 1.0.2 | k-mer-based | SE, PE | human, bacteria | BMC Bioinformatics | 2015 | C | Quake, SGA, BLESS, Musket, RACER | https://github.com/emarinier/pollux | Software Dependencies |  
+| Pollux | 1.0.2 | k-mer-based | SE, PE | human, bacteria | BMC Bioinformatics | 2015 | C | Quake, SGA, BLESS, Musket, RACER | https://github.com/emarinier/pollux | 64 bit Unix-based OS,  | 31k | 
 | BFC | 1.0 | k-mer based | SE, PE (interleaved) | Reference-free | _Bioinformatics_ | 2015 | C | BLESS-v0p23 (Heo etal., 2014), Bloocoo-1.0.4 (Drezen etal., 2014), fermi2-r175 (Li, 2012), Lighter-20150123 (Song etal., 2014), Musket-1.1 (Liu etal., 2013) and SGA-0.9.13 (Simpson and Durbin, 2012) | https://github.com/lh3/bfc | - | None | Depends on input genome size | 
-| Lighter | 1.1.1 | k-mer-based | fastq,fasta | Organism | _Genome Biology_ | 2014 | C++ | In the publication compared to | https://github.com/mourisl/Lighter | 
-| Musket | 1.1 | k-mer-based | fastq, fasta | Organism | _Oxford Bioinformatics_ |  2012 | C++ | In the publication compared to | http://musket.sourceforge.net/homepage.htm |
-| Racer | 1.0.1 | k-mer-based | fastq, fasta | - | _Bioinformatics_ | 2013 | C++ | Coral, HITEC, Quake, Reptile, SHREC |
-| Reptile | 1.1 | k-mer-based | fastq | - | _Bioinformatics_ | 2010 | C++ | SHREC |
-| Quake | 0.3 | k-mer-based | Types of reads accepted | Organism | _Genome Biology_ | 2010 | C++, R | In the publication compared to | http://www.cbcb.umd.edu/software/quake |
-| SOAPdenovo2 Corrector | 2.03 | k-mer based | SE, PE | Reference-free | _GigaScience_ | 2012 | C++ | SOAPdevnovo1, ALLPATHS-LG | http://soap.genomics.org.cn/about.html | 
-| ECHO | 1.12 | Underlying algorithm | fastq | Reference-free | Genome Research | 2012 | Python | In the publication compared to |
+| Lighter | 1.1.1 | k-mer-based | fastq,fasta | Organism | _Genome Biology_ | 2014 | C++ | Quake v0.3, Musket v1.1, Bless v0p17, Soapec v2.0.1 | https://github.com/mourisl/Lighter | - | 15k |
+| Musket | 1.1 | k-mer-based | fastq, fasta | Organism | _Oxford Bioinformatics_ |  2012 | C++ | HiTEC, SGA, SHREC, Coral, Quake, Reptile, DecGPU | http://musket.sourceforge.net/homepage.htm | - | 28k |
+| Racer | 1.0.1 | k-mer-based | fastq, fasta | Organism | _Bioinformatics_ | 2013 | C++ | Coral, HITEC, Quake, Reptile, SHREC | - | OpenMP | - | 
+| Reptile | 1.1 | k-mer-based | fastq | Organism | _Bioinformatics_ | 2010 | C++ | SHREC | - | - | - |
+| Quake | 0.3 | k-mer-based | fastq | Organism | _Genome Biology_ | 2010 | C++, R | SOAPdenovo | http://www.cbcb.umd.edu/software/quake | - | - |
+| SOAPdenovo2 Corrector | 2.03 | k-mer based | SE, PE | Reference-free | _GigaScience_ | 2012 | C/C++ | SOAPdevnovo1, ALLPATHS-LG | http://soap.genomics.org.cn/about.html | GCC 4.4.5 or later | - |
+| ECHO | 1.12 | Underlying algorithm | fastq | Reference-free | Genome Research | 2012 | Python | SA, SHREC | - |
 | Coral | 1.4.1 | Multiple alignments | SE, PE (interleaved) | Reference-free | _Bioinformatics_ | 2011 | C | Shrec, Quake, Reptile | https://www.cs.helsinki.fi/u/lmsalmel/coral/ |
 
 
