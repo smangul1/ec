@@ -79,7 +79,7 @@ Table S1. Information about the error correction tools included in the benchmark
 | Reptile | 1.1 | k-mer-based | fastq | Organism | _Bioinformatics_ | 2010 | C++ | SHREC | http://aluru-sun.ece.iastate.edu/doku.php?id=reptile | Perl | 24 |
 | Quake | 0.3 | k-mer-based | fastq | Organism | _Genome Biology_ | 2010 | C++, R | SOAPdenovo | http://www.cbcb.umd.edu/software/quake | - | - |
 | SOAPdenovo2 Corrector | 2.03 | k-mer based | SE, PE | Reference-free | _GigaScience_ | 2012 | C/C++ | SOAPdevnovo1, ALLPATHS-LG | http://soap.genomics.org.cn/about.html | GCC 4.4.5 or later | - |
-| ECHO | 1.12 | Underlying algorithm | fastq | Reference-free | Genome Research | 2012 | Python | SA, SHREC | - |
+| ECHO | 1.12 | Underlying algorithm | fastq | Reference-free | Genome Research | 2012 | Python | SA, SHREC | http://uc-echo.sourceforge.net/ | C++, Python | 1/6 (length of read) | 
 | Coral | 1.4.1 | Multiple alignments | SE, PE (interleaved) | Reference-free | _Bioinformatics_ | 2011 | C | Shrec, Quake, Reptile | https://www.cs.helsinki.fi/u/lmsalmel/coral/ |
 
 
