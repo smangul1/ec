@@ -101,6 +101,11 @@ Table S1. Information about the error correction tools included in the benchmark
 ### To run:
 ```python ErrorCorrection.py -o output/sample_data.fastq sample_data.txt```
 
+## Pollux
+### To install:
+```make```
+### To run
+```./pollux -p -i <fastq_reads_1> <fastq_reads_2> -o ouput```
 
 ## BFC
 ### To install:
