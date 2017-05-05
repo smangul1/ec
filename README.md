@@ -94,6 +94,10 @@ Table S1. Information about the error correction tools included in the benchmark
 
 
 ## Fiona
+### To install:
+```make```
+### To run:
+```fiona [OPTIONS] -g GENOME_LENGTH INPUT_FILE OUTPUT_FILE```
 
 ## ECHO
 ### To install:
