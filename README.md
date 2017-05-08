@@ -76,7 +76,7 @@ Table S1. Information about the error correction tools included in the benchmark
 | Lighter | 1.1.1 | k-mer-based | fastq,fasta | Organism | _Genome Biology_ | 2014 | C++ | Quake v0.3, Musket v1.1, Bless v0p17, Soapec v2.0.1 | https://github.com/mourisl/Lighter | - | 15k |
 | Musket | 1.1 | k-mer-based | fastq, fasta | Organism | _Oxford Bioinformatics_ |  2012 | C++ | HiTEC, SGA, SHREC, Coral, Quake, Reptile, DecGPU | http://musket.sourceforge.net/homepage.htm | - | 28k |
 | Racer | 1.0.1 | k-mer-based | fastq, fasta | Organism | _Bioinformatics_ | 2013 | C++ | Coral, HITEC, Quake, Reptile, SHREC | http://www.csd.uwo.ca/~ilie/RACER/ | OpenMP | - | 
-| Reptile | 1.1 | k-mer-based | fastq | Organism | _Bioinformatics_ | 2010 | C++ | SHREC, Perl, GNU make, C++ compiler | http://aluru-sun.ece.iastate.edu/doku.php?id=reptile | Perl | 24 |
+| Reptile | 1.1 | k-mer-based | fastq | Organism | _Bioinformatics_ | 2010 | C++ | SHREC | http://aluru-sun.ece.iastate.edu/doku.php?id=reptile | Perl, GNU make, C++ compiler | 24 |
 | Quake | 0.3 | k-mer-based | fastq | Organism | _Genome Biology_ | 2010 | C++, R | SOAPdenovo | http://www.cbcb.umd.edu/software/quake | - | - |
 | SOAPdenovo2 Corrector | 2.03 | k-mer based | SE, PE | Reference-free | _GigaScience_ | 2012 | C/C++ | SOAPdevnovo1, ALLPATHS-LG | http://soap.genomics.org.cn/about.html | GCC 4.4.5 or later | - |
 | ECHO | 1.12 | Probablistic overlap finding through k-mer | SE | Reference-free | Genome Research | 2012 | Python | SA, SHREC | http://uc-echo.sourceforge.net/ | GCC 4.1 or later, Python 2.6, numpy, scipy | 1/6 (length of read) | 
