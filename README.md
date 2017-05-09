@@ -213,6 +213,8 @@ genome size=3 000 000 000
 
 # T2 
 
+k=18 genome size=405000 log4(405*1000)X2=18
+
 ### S2
 k=18
 genome size=405000
