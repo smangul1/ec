@@ -77,10 +77,10 @@ Table S1. Information about the error correction tools included in the benchmark
 | Musket | 1.1 | k-mer-based | fastq, fasta | Human, E. Coli, C. elegans | _Oxford Bioinformatics_ |  2012 | C++ | HiTEC, SGA, SHREC, Coral, Quake, Reptile, DecGPU | http://musket.sourceforge.net/homepage.htm | N/A | N/A |
 | Racer | 1.0.1 | k-mer-based | fastq, fasta | Human, bacteria, virus, C. elegans, Drosophila | _Bioinformatics_ | 2013 | C++ | Coral, HITEC, Quake, Reptile, SHREC | http://www.csd.uwo.ca/~ilie/RACER/ | OpenMP | N/A | 
 | Reptile | 1.1 | k-mer-based | fastq | Human, Acinetobacter sp., E. Coli | _Bioinformatics_ | 2010 | C++ | SHREC | http://aluru-sun.ece.iastate.edu/doku.php?id=reptile | Perl, GNU make, C++ compiler | 24 |
-| Quake | 0.3 | k-mer-based | fastq | Human, E. Coli  | _Genome Biology_ | 2010 | C++, R | SOAPdenovo,EULER, SHREC | http://www.cbcb.umd.edu/software/quake | N/A | N/A |
+| Quake | 0.3 | k-mer-based | SE or PE | Human, E. Coli  | _Genome Biology_ | 2010 | C++, R | SOAPdenovo,EULER, SHREC | http://www.cbcb.umd.edu/software/quake | N/A | N/A |
 | SOAPdenovo2 Corrector | 2.03 | k-mer based | SE, PE | Human, PhiX174, Drosophilla, Saccharomyces cerevisiae | _GigaScience_ | 2012 | C/C++ | SOAPdevnovo1, ALLPATHS-LG | http://soap.genomics.org.cn/about.html | GCC 4.4.5 or later | N/A |
 | ECHO | 1.12 | Probablistic overlap finding through k-mer | SE | Human,  | Genome Research | 2012 | Python | SA, SHREC | http://uc-echo.sourceforge.net/ | GCC 4.1 or later, Python 2.6, numpy, scipy | 1/6 (length of read) | 
-| Coral | 1.4.1 | Multiple alignments | SE, PE (interleaved) | Reference-free | _Bioinformatics_ | 2011 | C | Shrec, Quake, Reptile, COMPASS 3.0, HHalign 1.5.1.1 and PSI-BLAST | https://www.cs.helsinki.fi/u/lmsalmel/coral/ | N/A | N/A |
+| Coral | 1.4.1 | Multiple alignments | SE, PE (interleaved) | No Organism | _Bioinformatics_ | 2011 | C | Shrec, Quake, Reptile, COMPASS 3.0, HHalign 1.5.1.1 and PSI-BLAST | https://www.cs.helsinki.fi/u/lmsalmel/coral/ | N/A | N/A |
 
 
 
