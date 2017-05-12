@@ -80,7 +80,7 @@ Table S1. Information about the error correction tools included in the benchmark
 | Quake | 0.3 | k-mer-based | Bit array index | SE or PE | Human, E. Coli  | _Genome Biology_ | 2010 | C++, R | SOAPdenovo,EULER, SHREC | http://www.cbcb.umd.edu/software/quake | N/A | N/A |
 | SOAPdenovo2 Corrector | 2.03 | k-mer based | Hash | SE, PE | Human, PhiX174, Drosophilla, Saccharomyces cerevisiae | _GigaScience_ | 2012 | C/C++ | SOAPdevnovo1, ALLPATHS-LG | http://soap.genomics.org.cn/about.html | GCC 4.4.5 or later | N/A |
 | ECHO | 1.12 | MSA* | Hash table | SE | Human,  | Genome Research | 2012 | Python | SA, SHREC | http://uc-echo.sourceforge.net/ | GCC 4.1 or later, Python 2.6, numpy, scipy | 1/6 (length of read) | 
-| Coral | 1.4.1 | MSA | SE, PE (interleaved) | No Organism | _Bioinformatics_ | 2011 | C | Shrec, Quake, Reptile, COMPASS 3.0, HHalign 1.5.1.1 and PSI-BLAST | https://www.cs.helsinki.fi/u/lmsalmel/coral/ | N/A | N/A |
+| Coral | 1.4.1 | MSA | Hash table | SE, PE (interleaved) | No Organism | _Bioinformatics_ | 2011 | C | Shrec, Quake, Reptile, COMPASS 3.0, HHalign 1.5.1.1 and PSI-BLAST | https://www.cs.helsinki.fi/u/lmsalmel/coral/ | N/A | N/A |
 
 * MSA - multiple sequence alignment
 
