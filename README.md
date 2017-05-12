@@ -83,6 +83,7 @@ Table S1. Information about the error correction tools included in the benchmark
 | Coral | 1.4.1 | MSA* | Hash table | SE, PE (interleaved) | No Organism | _Bioinformatics_ | 2011 | C | Shrec, Quake, Reptile, COMPASS 3.0, HHalign 1.5.1.1 and PSI-BLAST | https://www.cs.helsinki.fi/u/lmsalmel/coral/ | N/A | N/A |
 | RECKONER | | http://sun.aei.polsl.pl/REFRESH/index.php?page=projects&project=reckoner&subpage=about | 
 * MSA - multiple sequence alignment
+| MeCorS | https://github.com/metagenomics/MeCorS | 
 
 # How to run error correction tools
 
