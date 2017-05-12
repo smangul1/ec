@@ -84,7 +84,8 @@ Table S1. Information about the error correction tools included in the benchmark
 | RECKONER | | http://sun.aei.polsl.pl/REFRESH/index.php?page=projects&project=reckoner&subpage=about | 
 * MSA - multiple sequence alignment
 | MeCorS | https://github.com/metagenomics/MeCorS | 
-
+| ShoRAH | virus |
+| KEC | virus | 
 # How to run error correction tools
 
 ## Bless
