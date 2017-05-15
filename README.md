@@ -62,31 +62,36 @@ We have used in-house sequencing data derived from 3.4 kb region of Human Immuno
 ### Information about the error correction tools included in the benchmarking study.
 
 
-For each of the tools we provide schell script with instlation commands. Instalation scripts are availabla at 
+For each of the tools we provide schell script with instlation commands. Instalation scripts are available at 
 
 
 Table S1. Information about the error correction tools included in the benchmarking study.
 
-| Name | Version | Underlying algorithm | Data structure | Types of reads accepted (single-end(SE) or pairen-end(PE)) | Organism | Journal | Published year | Programming language | In the publication compared to | Tools webpage | Software Dependencies |  Default k-mer size |  
-| --- | --- | --- | --- | --- | --- | --- |  --- |  ---| ---|  --- |  ---| ---|
-| BLESS | 1.02 | k -mer spectrum | Bloom filter and hash table   | SE and PE | Human, E. Coli, Staphylococcus aureus | Oxford Bioinformatics | 2014 | C++ | DecGPU, ECHO, HiTEC, Musket, Quake, Reptile | https://sourceforge.net/p/bless-ec/wiki/Home/ |  MPICH 3.1.3, OpenMPI 1.8.4, Boost library, google spareshash, klib, KMC, murmurhash3, zlib, pigz | N/A 
-| Fiona | 0.2.8 | k -mer spectrum | partial suffix array |  SE  |  human, drosophila, bacteria, C. elegans | Bioinformatics | 2014 | C++ | Allpaths-LG,Coral,H-Shrec,ECHO,HiTEC,Quake  | https://github.com/seqan/seqan/tree/master/apps/fiona  | Software Dependencies | N/A |
-| Pollux | 1.0.2 | k -mer spectrum | ? | SE, PE | human, bacteria | BMC Bioinformatics | 2015 | C | Quake, SGA, BLESS, Musket, RACER | https://github.com/emarinier/pollux | 64 bit Unix-based OS,  | 31k | 
-| BFC | 1.0 | k -mer spectrum | Bloom filter and hash table | SE, PE (interleaved) | Human,C. Elegans | _Bioinformatics_ | 2015 | C | BLESS-v0p23 (Heo etal., 2014), Bloocoo-1.0.4 (Drezen etal., 2014), fermi2-r175 (Li, 2012), Lighter-20150123 (Song etal., 2014), Musket-1.1 (Liu etal., 2013) and SGA-0.9.13 (Simpson and Durbin, 2012) | https://github.com/lh3/bfc | N/A | N/A | Depends on input genome size | 
-| Lighter | 1.1.1 | k -mer spectrum | Bloom filter | SE and PE | Human, E. Coli, C. elegan | _Genome Biology_ | 2014 | C++ | Quake v0.3, Musket v1.1, Bless v0p17, Soapec v2.0.1 | https://github.com/mourisl/Lighter | N/A | N/A |
-| Musket | 1.1 | k-mer spectrum | Bloom filter and hash table | SE and PE | Human, E. Coli, C. elegans | _Oxford Bioinformatics_ |  2012 | C++ | HiTEC, SGA, SHREC, Coral, Quake, Reptile, DecGPU | http://musket.sourceforge.net/homepage.htm | N/A | N/A |
-| Racer | 1.0.1 | k-mer spectrum | Hash table | SE and PE | Human, bacteria, virus, C. elegans, Drosophila | _Bioinformatics_ | 2013 | C++ | Coral, HITEC, Quake, Reptile, SHREC | http://www.csd.uwo.ca/~ilie/RACER/ | OpenMP | N/A | 
-| Reptile | 1.1 | k-mer spectrum | Hamming graph | couldn't find (Russell) | Human, Acinetobacter sp., E. Coli | _Bioinformatics_ | 2010 | C++ | SHREC | http://aluru-sun.ece.iastate.edu/doku.php?id=reptile | Perl, GNU make, C++ compiler | 24 |
-| Quake | 0.3 | k-mer spectrum | Bit array index | SE or PE | Human, E. Coli  | _Genome Biology_ | 2010 | C++, R | SOAPdenovo,EULER, SHREC | http://www.cbcb.umd.edu/software/quake | N/A | N/A |
+| Name | Version | Underlying algorithm | Data structure | Types of reads accepted (single-end(SE) or pairen-end(PE)) | Organism | Journal | Published year | Programming language | In the publication compared to | Tools webpage | Software Dependencies |  Default k-mer size |  Read trimming |
+| --- | --- | --- | --- | --- | --- | --- |  --- |  ---| ---|  --- |  ---| ---| ---|
+| BLESS | 1.02 | k -mer spectrum | Bloom filter and hash table   | SE and PE | Human, E. Coli, Staphylococcus aureus | Oxford Bioinformatics | 2014 | C++ | DecGPU, ECHO, HiTEC, Musket, Quake, Reptile | https://sourceforge.net/p/bless-ec/wiki/Home/ |  MPICH 3.1.3, OpenMPI 1.8.4, Boost library, google spareshash, klib, KMC, murmurhash3, zlib, pigz | N/A | YES |
+| Fiona | 0.2.8 | k -mer spectrum | partial suffix array |  SE  |  human, drosophila, bacteria, C. elegans | Bioinformatics | 2014 | C++ | Allpaths-LG,Coral,H-Shrec,ECHO,HiTEC,Quake  | https://github.com/seqan/seqan/tree/master/apps/fiona  | Software Dependencies | N/A | YES |
+| Pollux | 1.0.2 | k -mer spectrum | ? | SE, PE | human, bacteria | BMC Bioinformatics | 2015 | C | Quake, SGA, BLESS, Musket, RACER | https://github.com/emarinier/pollux | 64 bit Unix-based OS,  | 31k | YES |
+| BFC | 1.0 | k -mer spectrum | Bloom filter and hash table | SE, PE (interleaved) | Human,C. Elegans | _Bioinformatics_ | 2015 | C | BLESS-v0p23 (Heo etal., 2014), Bloocoo-1.0.4 (Drezen etal., 2014), fermi2-r175 (Li, 2012), Lighter-20150123 (Song etal., 2014), Musket-1.1 (Liu etal., 2013) and SGA-0.9.13 (Simpson and Durbin, 2012) | https://github.com/lh3/bfc | N/A | Depends on input genome size | NO |
+| Lighter | 1.1.1 | k -mer spectrum | Bloom filter | SE and PE | Human, E. Coli, C. elegan | _Genome Biology_ | 2014 | C++ | Quake v0.3, Musket v1.1, Bless v0p17, Soapec v2.0.1 | https://github.com/mourisl/Lighter | N/A | N/A | NO |
+| Musket | 1.1 | k-mer spectrum | Bloom filter and hash table | SE and PE | Human, E. Coli, C. elegans | _Oxford Bioinformatics_ |  2012 | C++ | HiTEC, SGA, SHREC, Coral, Quake, Reptile, DecGPU | http://musket.sourceforge.net/homepage.htm | N/A | N/A | NO |
+| Racer | 1.0.1 | k-mer spectrum | Hash table | SE and PE | Human, bacteria, virus, C. elegans, Drosophila | _Bioinformatics_ | 2013 | C++ | Coral, HITEC, Quake, Reptile, SHREC | http://www.csd.uwo.ca/~ilie/RACER/ | OpenMP | N/A | NO |
+| Reptile | 1.1 | k-mer spectrum | Hamming graph | couldn't find (Russell) | Human, Acinetobacter sp., E. Coli | _Bioinformatics_ | 2010 | C++ | SHREC | http://aluru-sun.ece.iastate.edu/doku.php?id=reptile | Perl, GNU make, C++ compiler | 24 | NO |
+| Quake | 0.3 | k-mer spectrum | Bit array index | SE or PE | Human, E. Coli  | _Genome Biology_ | 2010 | C++, R | SOAPdenovo,EULER, SHREC | http://www.cbcb.umd.edu/software/quake | N/A | N/A | YES |
 | SOAPdenovo2 Corrector | 2.03 | k-mer spectrum | Hash table | SE, PE | Human, PhiX174, Drosophilla, Saccharomyces cerevisiae | _GigaScience_ | 2012 | C/C++ | SOAPdevnovo1, ALLPATHS-LG | http://soap.genomics.org.cn/about.html | GCC 4.4.5 or later | N/A |
-| ECHO | 1.12 | MSA* | Hash table | SE | Human,  | Genome Research | 2012 | Python | SA, SHREC | http://uc-echo.sourceforge.net/ | GCC 4.1 or later, Python 2.6, numpy, scipy | 1/6 (length of read) | 
-| Coral | 1.4.1 | MSA* | Hash table | SE, PE (interleaved) | No Organism | _Bioinformatics_ | 2011 | C | Shrec, Quake, Reptile, COMPASS 3.0, HHalign 1.5.1.1 and PSI-BLAST | https://www.cs.helsinki.fi/u/lmsalmel/coral/ | N/A | N/A |
+| ECHO | 1.12 | MSA* | Hash table | SE | Human,  | Genome Research | 2012 | Python | SA, SHREC | http://uc-echo.sourceforge.net/ | GCC 4.1 or later, Python 2.6, numpy, scipy | 1/6 (length of read) | YES |
+| Coral | 1.4.1 | MSA* | Hash table | SE, PE (interleaved) | No Organism | _Bioinformatics_ | 2011 | C | Shrec, Quake, Reptile, COMPASS 3.0, HHalign 1.5.1.1 and PSI-BLAST | https://www.cs.helsinki.fi/u/lmsalmel/coral/ | N/A | N/A | YES |
 | RECKONER | | http://sun.aei.polsl.pl/REFRESH/index.php?page=projects&project=reckoner&subpage=about | 
-| SGA | github.com/jts/sga/ | 
+| SGA | github.com/jts/sga/ |
 | ShoRAH | virus |
-| KEC | virus | 
+| KEC | virus |
 
 * MSA - multiple sequence alignment
+* Command for checking whether a tool trims reads:
+```
+cd /u/home/n/ngcrawfo/scratch/ERROR_CORRECTION/simulated_reads_ec/results
+for tool in `ls`; do echo -n "${tool} "; f=`ls ${tool}/IGH/splitted/sim_rl_100_cov_128/ | head -1`; n=`cat ${tool}/IGH/splitted/sim_rl_100_cov_128/${f} | awk 'NR % 4 == 2 {print length($0)}' | sort | uniq | wc -l`; if [[ $n -eq 1 ]]; then echo "NO"; else echo "YES"; fi; done
+```
 
 
 # How to run error correction tools
