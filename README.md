@@ -81,7 +81,7 @@ Table S1. Information about the error correction tools included in the benchmark
 | SOAPdenovo2 Corrector | 2.03 | k-mer spectrum | Hash table | SE, PE | Human, PhiX174, Drosophilla, Saccharomyces cerevisiae | _GigaScience_ | 2012 | C/C++ | SOAPdevnovo1, ALLPATHS-LG | http://soap.genomics.org.cn/about.html | GCC 4.4.5 or later | N/A |
 | ECHO | 1.12 | MSA* | Hash table | SE | Human,  | Genome Research | 2012 | Python | SA, SHREC | http://uc-echo.sourceforge.net/ | GCC 4.1 or later, Python 2.6, numpy, scipy | 1/6 (length of read) | YES |
 | Coral | 1.4.1 | MSA* | Hash table | SE, PE (interleaved) | No Organism | _Bioinformatics_ | 2011 | C | Shrec, Quake, Reptile, COMPASS 3.0, HHalign 1.5.1.1 and PSI-BLAST | https://www.cs.helsinki.fi/u/lmsalmel/coral/ | N/A | N/A | YES |
-| RECKONER | | http://sun.aei.polsl.pl/REFRESH/index.php?page=projects&project=reckoner&subpage=about | 
+| RECKONER | 0.2.1 | k-mer spectrum | Hash table | Doesn't say | S. cerevisiae, C. elegans, M. acuminata | _Bioinformatics_ | 2017 | C++ | Ace 1.01, BFC-ht v1, BLESS 0.24, Blue 1.1.2, Karect 1.0, Lighter 1.0.4, Musket 1.1, Pollux 1.00, RACER 1.0.1, Trowel 0.1.4.3 | https://github.com/refresh-bio/RECKONER | KMC2, KMC tools | N/A | TODO |
 | SGA | github.com/jts/sga/ |
 | ShoRAH | virus |
 | KEC | virus |
