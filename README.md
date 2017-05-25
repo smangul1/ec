@@ -100,7 +100,8 @@ for tool in `ls`; do echo -n "${tool} "; f=`ls ${tool}/IGH/splitted/sim_rl_100_c
 #### To install:
 ```make```
 #### To run:
-```./bless -read1 <forward fastq> -read2 <reverse fastq> -load prefix -prefix <new prefix> -kmerlength <k-mer length>```
+```./bless -read1 <forward fastq> -read2 <reverse fastq> -load prefix -prefix <new prefix> -kmerlength <k-mer length>
+```
 
 
 ## Fiona
