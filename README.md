@@ -35,6 +35,10 @@ Ground true (high-quality variant calls) was downloaded from ftp://ftp-trace.ncb
 #### T1b : 100G WGS 
 We use higly covered positions of WXS to define higly confident calls and use those to estimate error rate in corresponding samples obtained by WGS. 
 
+We downloaded the 30x downsampled NA12878 BAM file from https://github.com/genome-in-a-bottle/giab_data_indexes/blob/master/NA12878/alignment.index.NA12878_HiSeq_downsampled30X_GRCh37_10262015
+
+This Python script was used to split the BAM file into two files randomly: one containing 90% of the reads and one containing 10%
+https://gist.github.com/brianhill11/7aeeeb6d94edfb868e5595aac04a0dd6
 
 #### S1a
 
