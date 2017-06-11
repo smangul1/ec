@@ -87,7 +87,7 @@ Table S1. Information about the error correction tools included in the benchmark
 | Coral | 1.4.1 | MSA* | Hash table | SE, PE (interleaved) | No Organism | _Bioinformatics_ | 2011 | C | COMPASS 3.0, HHalign 1.5.1.1 and PSI-BLAST | https://www.cs.helsinki.fi/u/lmsalmel/coral/ | N/A | N/A | YES |
 | RECKONER | 0.2.1 | k-mer spectrum | Hash table | Doesn't say | S. cerevisiae, C. elegans, M. acuminata | _Bioinformatics_ | 2017 | C++ | Ace 1.01, BFC-ht v1, BLESS 0.24, Blue 1.1.2, Karect 1.0, Lighter 1.0.4, Musket 1.1, Pollux 1.00, RACER 1.0.1, Trowel 0.1.4.3 | https://github.com/refresh-bio/RECKONER | KMC2, KMC tools | N/A | NO |
 | SGA | 0.10.15 | FM-index search | FM-index | SE and PE | C. elegans, E. coli, Human | Genome Research | 2012 | C++ | Velvet, ABySS, SOAPdenovo, Quake, HiTEC | https://github.com/jts/sga | Google sparse hash library, bamtools, zlib, jemalloc (optional), pysam, ruffus | 31 | NO 
-| ShoRAH | virus |
+| ShoRAH | 1.1.0 | clustering| not specified   | SE | RNA viruses | BMC Bioinformatics | 2011 | C++, Python, Perl | no comparison | https://github.com/cbg-ethz/shorah |  Biopython, NumPy, Perl, zlib, pkg-config, GNU scientific library| N/A | YES |
 | KEC | 1.0 | k -mer spectrum | Hash table   | SE | RNA viruses | BMC Bioinformatics | 2012 | Java | ShoRAH | http://alan.cs.gsu.edu/NGS/?q=content/pyrosequencing-error-correction-algorithm |  FAMS; ClustalW2 or Muscle (optional) | 25 | NO |
 
 * MSA - multiple sequence alignment
