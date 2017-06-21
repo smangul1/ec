@@ -195,6 +195,24 @@ Quake/bin/correct -r <fastq file> -k <k-mer length> -m counts.txt -a cutoff.txt
 ### To run:
 ```./coral [-f, -fq or -fs for input file format] <input file> -o <output file>```
 
+## RECKONER
+### To install:
+```make```
+### To run:
+```reckoner -memory <8G> -prefix <output directory> -kmerlength <K> <list of fastq files>```
+
+## SGA
+### To install:
+```
+./autogen.sh
+./configure && make && make install
+```
+### To run:
+```
+sga preprocess <input fastq> > <output fastq>.preprocessed.fastq
+sga index -a ropebwt <output fastq>.preprocessed.fastq
+sga correct -k <K> -o <output fastq>.out.fastq <output fastq>.preprocessed.fastq
+```
 
 # Preparing golden true datasets
 
