@@ -8,8 +8,7 @@ AUTHOR="imandric1"
 ##########          The main template script          ##########
 ################################################################
 
-toolName="pollux"
-toolPath="/u/home/n/ngcrawfo/project-zarlab/igor/VIRAL_CORRECTION/tools/pollux/pollux"
+
 
 # STEPS OF THE SCRIPT
 # 1) prepare input if necessary
@@ -40,9 +39,15 @@ echo "2 <input2> - _2.fastq"
 echo "3 <tmpdir> - dir to save the intermediate output"
 echo "4 <outdir> - dir to save the output"
 echo "5 <kmer>   - kmer length"
+echo "6 path where tool is intalled. In case it is globally installed use "\"\"
 echo "--------------------------------------"
 exit 1
 fi
+
+
+
+
+
 
 
 
@@ -51,9 +56,15 @@ input1=$1
 input2=$2
 tmpdir=$3
 outdir=$4
+path=$6
+toolName="pollux"
+toolPath="$path$toolName"
+
 
 # extra part (tool specific)
 kmer=$5
+path=$6
+
 
 
 
