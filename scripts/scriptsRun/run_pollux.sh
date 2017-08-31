@@ -33,16 +33,13 @@ echo "********************************************************************"
 echo "Script was written for project : Best practices for conducting benchmarking in the most comprehensive and reproducible way"
 echo "This script was written by Igor Mandric"
 echo "********************************************************************"
-echo "Assumes gdrive is installed globally. https://github.com/prasmussen/gdrive"
-echo "********************************************************************"
 
 echo ""
 echo "1 <input1> - _1.fastq"
 echo "2 <input2> - _2.fastq"
-echo "3 <tmpdir> - dir to save the intermediate output"
-echo "4 <outdir> - index of Google Drive directory to save data. For example 0Bx1fyWeQo3cOZ3NmZmFjdXl1anc"
-echo "5 <kmer>   - kmer length"
-echo "6 path where tool is intalled. In case it is globally installed use "\"\"
+echo "3 <tmpdir> - dir to save the output"
+echo "4 <kmer>   - kmer length"
+echo "5 <path>   -  where tool is intalled. In case it is globally installed use "\"\"
 echo "--------------------------------------"
 exit 1
 fi
@@ -56,24 +53,30 @@ fi
 input1=$1
 input2=$2
 tmpdir=$3
-outdir=$4
 
 # extra part (tool specific)
-kmer=$5
-path=$6
+kmer=$4
+path=$5
 toolName="pollux"
 toolPath="$path/$toolName"
 
 
 
+
+filename1=$(echo ${input1} | awk -F "_1" '{print $1}')
+filename=$(basename $filename1)
+
+
+
+
 # STEP 0 - create output directory if it does not exist
 
-mkdir -p $outdir
-logfile=$outdir/report.log
+mkdir $tmpdir
+
 
 # -----------------------------------------------------
 
-echo "START" >> $logfile
+
 
 # STEP 1 - prepare input if necessary (ATTENTION: TOOL SPECIFIC PART!)
 
@@ -87,12 +90,21 @@ echo "START" >> $logfile
 # STEP 2 - run the tool (ATTENTION: TOOL SPECIFIC PART!)
 
 now="$(date)"
+wdir=${tmpdir}/$toolName-$( date +%Y-%m-%d-%H-%M-%S )
+mkdir $wdir
+logfile=$wdir/report_${filename}.log
+echo "START" > $logfile
+
+
 printf "%s --- RUNNING %s\n" "$now" $toolName >> $logfile
 
-wdir=${tmpdir}/$toolName-$( date +%Y-%m-%d-%H-%M-%S )
+
 
 #run the command (in a temporary directory)
 res1=$(date +%s.%N)
+
+echo "$toolPath -i $input1 $input2 -p -o $wdir -k $kmer >> $logfile 2>&1 " >>$logfile
+
 $toolPath -i $input1 $input2 -p -o $wdir -k $kmer >> $logfile 2>&1 
 res2=$(date +%s.%N)
 dt=$(echo "$res2 - $res1" | bc)
@@ -121,46 +133,18 @@ printf "%s --- FINISHED RUNNING %s %s\n" "$now" $toolName >> $logfile
 now="$(date)"
 printf "%s --- TRANSFORMING OUTPUT\n" "$now" >> $logfile
 
-cat $wdir/input_1.fastq.corrected $wdir/input_2.fastq.corrected | gzip > $wdir/${toolName}.corrected.fastq.gz
-rm $wdir/input_1.fastq.corrected
-rm $wdir/input_2.fastq.corrected
+
+
+
+cat $wdir/${filename}_1.fastq.corrected $wdir/${filename}_2.fastq.corrected | gzip - > $wdir/${toolName}_${filename}.corrected.fastq.gz
+rm $wdir/${filename}_1.fastq.corrected
+rm $wdir/${filename}_2.fastq.corrected
 
 now="$(date)"
 printf "%s --- TRANSFORMING OUTPUT DONE\n" "$now" >> $logfile
 
-# --------------------------------------
 
 
-
-
-
-# STEP 4 - send the output to the designated directory
-
-now="$(date)"
-printf "%s --- COPYING OUTPUT FILE\n" "$now" >> $logfile
-
-#cp $wdir/${toolName}.corrected.fastq.gz $outdir
-gdrive upload --parent 0Bx1fyWeQo3cOZ3NmZmFjdXl1anc $wdir/${toolName}.corrected.fastq.gz
-
-
-now="$(date)"
-printf "%s --- COPYING OUTPUT FILE DONE\n" "$now" >> $logfile
-
-# ----------------------------------------------------
-
-
-
-# STEP 5 - remove temporary files
-
-now="$(date)"
-printf "%s --- REMOVING TEMPORARY FILES\n" "$now" >> $logfile
-
-rm -rf $wdir
-
-now="$(date)"
-printf "%s --- REMOVING TEMPORARY FILES DONE\n" "$now" >> $logfile
-
-# -------------------------------
 
 
 printf "DONE" >> $logfile
