@@ -33,11 +33,14 @@ echo "********************************************************************"
 echo "Script was written for project : Best practices for conducting benchmarking in the most comprehensive and reproducible way"
 echo "This script was written by Igor Mandric"
 echo "********************************************************************"
+echo "Assumes gdrive is installed globally. https://github.com/prasmussen/gdrive"
+echo "********************************************************************"
+
 echo ""
 echo "1 <input1> - _1.fastq"
 echo "2 <input2> - _2.fastq"
 echo "3 <tmpdir> - dir to save the intermediate output"
-echo "4 <outdir> - dir to save the output"
+echo "4 <outdir> - index of Google Drive directory to save data. For example 0Bx1fyWeQo3cOZ3NmZmFjdXl1anc"
 echo "5 <kmer>   - kmer length"
 echo "6 path where tool is intalled. In case it is globally installed use "\"\"
 echo "--------------------------------------"
@@ -49,22 +52,17 @@ fi
 
 
 
-
-
 # mandatory part
 input1=$1
 input2=$2
 tmpdir=$3
 outdir=$4
-path=$6
-toolName="pollux"
-toolPath="$path$toolName"
-
 
 # extra part (tool specific)
 kmer=$5
 path=$6
-
+toolName="pollux"
+toolPath="$path/$toolName"
 
 
 
@@ -141,7 +139,9 @@ printf "%s --- TRANSFORMING OUTPUT DONE\n" "$now" >> $logfile
 now="$(date)"
 printf "%s --- COPYING OUTPUT FILE\n" "$now" >> $logfile
 
-cp $wdir/${toolName}.corrected.fastq.gz $outdir
+#cp $wdir/${toolName}.corrected.fastq.gz $outdir
+gdrive upload --parent 0Bx1fyWeQo3cOZ3NmZmFjdXl1anc $wdir/${toolName}.corrected.fastq.gz
+
 
 now="$(date)"
 printf "%s --- COPYING OUTPUT FILE DONE\n" "$now" >> $logfile
