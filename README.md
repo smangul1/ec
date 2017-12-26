@@ -260,3 +260,7 @@ genome size=3400
  Since we have relatively long read lengths of 88bp
 and relatively high average read coverage levels of up to 100x, we chose a larger
 k-mer size of 15. 
+
+
+# More tools to install 
+- https://www.ncbi.nlm.nih.gov/pubmed/26678663
